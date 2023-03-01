@@ -12,10 +12,10 @@ public class Countries {
         this.currency = currency;
     }
 
-    public String country_information()
+    public void country_information()
     {
-        return "\n\tКраїна: " + name + "\n\tСтолиця: " + capital + "\n\tНаселення: " + population
-                + "\n\tГрошова одиниця: " + currency;
+        System.out.println("\n\tКраїна: " + name + "\n\tСтолиця: " + capital + "\n\tНаселення: " + population
+                + "\n\tГрошова одиниця: " + currency);
     }
 
     public static String get_larger_population(Countries country_1, Countries country_2) {
@@ -44,6 +44,6 @@ public class Countries {
 
         country_3.capital = "Франкфурт";
 
-        System.out.println(country_3.country_information());
+        country_3.country_information();
     }
 }

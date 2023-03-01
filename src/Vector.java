@@ -25,7 +25,7 @@ public class Vector {
     }
 
     public static void main(String[] args) {
-        System.out.println("\n\n\t--- Seventh task ---");
+        System.out.println("\n\t--- Seventh task ---");
         DecimalFormat dF = new DecimalFormat( "#.###" );
         Vector vector_1 = new Vector(3, 4, 6);
         Vector vector_2 = new Vector(1, 8, 2);

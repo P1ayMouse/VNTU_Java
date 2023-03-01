@@ -12,26 +12,6 @@ public class Countries {
         this.currency = currency;
     }
 
-    public void set_name(String name)
-    {
-        this.name = name;
-    }
-
-    public void set_capital(String capital)
-    {
-        this.capital = capital;
-    }
-
-    public void set_population(int population)
-    {
-        this.population = population;
-    }
-
-    public void set_currency(String currency)
-    {
-        this.currency = currency;
-    }
-
     public String country_information()
     {
         return "\n\tКраїна: " + name + "\n\tСтолиця: " + capital + "\n\tНаселення: " + population
@@ -62,7 +42,7 @@ public class Countries {
         Countries country_2 = india;
         Countries country_3 = germany;
 
-        country_3.set_capital("Франкфурт");
+        country_3.capital = "Франкфурт";
 
         System.out.println(country_3.country_information());
     }

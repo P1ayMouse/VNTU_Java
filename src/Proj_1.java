@@ -9,21 +9,21 @@ public class Proj_1 {
         System.out.print("\nВведіть число: ");
         int number = scanner.nextInt();
 
-        String numberString = Integer.toString(number);
+        String number_string = Integer.toString(number);
 
         System.out.print("Числа із парним індексом: ");
-        for (int i = 0; i < numberString.length(); i++) {
+        for (int i = 0; i < number_string.length(); i++) {
             if (i % 2 == 0)
             {
-                System.out.print(numberString.charAt(i));
+                System.out.print(number_string.charAt(i));
             }
         }
 
         System.out.print("\nЧисла із непапарними індексами: ");
-        for (int i = 0; i < numberString.length(); i++) {
+        for (int i = 0; i < number_string.length(); i++) {
             if (i % 2 != 0)
             {
-                System.out.print(numberString.charAt(i));
+                System.out.print(number_string.charAt(i));
             }
         }
     }

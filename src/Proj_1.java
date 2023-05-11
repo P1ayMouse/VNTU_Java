@@ -97,22 +97,22 @@ public class Proj_1 {
         System.out.print("\nВведіть число: ");
         int number = scanner.nextInt();
 
-        int sumEven = 0;
-        int sumOdd = 0;
+        int sum_even = 0;
+        int sum_odd = 0;
         while (number != 0) {
             int digit = number % 10;
             if (digit % 2 == 0) {
-                sumEven += digit;
+                sum_even += digit;
             }
             else
             {
-                sumOdd += digit;
+                sum_odd += digit;
             }
             number /= 10;
         }
 
-        System.out.println("Сума парних чисел: " + sumEven);
-        System.out.println("Сума непарних чисел: " + sumOdd);
+        System.out.println("Сума парних чисел: " + sum_even);
+        System.out.println("Сума непарних чисел: " + sum_odd);
     }
 
     public static void math_and_exception(Scanner scanner)
